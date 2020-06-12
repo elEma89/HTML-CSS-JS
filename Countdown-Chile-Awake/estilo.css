@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+*{
+    margin: 50px;
+}
+
+body { 
+    background: url(apruebo3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+body:before{
+    background-color: rgb(0, 0, 0,0.9);
+}
+
+
+.contenedor{
+    /*display: flex;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10, 10, 10, 0.95);
+    max-width: 1200px;
+    border-radius: 1em;
+    margin-top: -50px;
+}
+
+.titulo{
+    font-family: 'Unica One';
+    color: rgb(120, 120, 120);
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+.cuentaCont{
+    margin-top: -110px;
+    align-items: center;
+    font-family: 'Bebas Neue';
+    font-size: 8em;
+    color: rgb(170, 170, 170);
+}
+
+p{
+    font-family: 'Unica One';
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(120, 120, 120);
+    background-color: rgb(10, 10, 10, 0.95);
+    margin-top: -30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+hr{
+    color: rgb(70, 70, 70);
+    margin-top: -10px;
+}
+
+
