@@ -1,0 +1,319 @@
+/*cris*/
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    /*resetear márgenes de navegadores*/
+padding: 0;
+margin: 0;
+/* ?????? buscar box sizing ---*/
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-gap: 1px;
+    height: 100vh;
+    grid-template-areas: "header "
+                         "contenido "
+                         "contenidoa"
+                         "contenidob"
+                         "contenidoc"
+                         "footer";
+  }
+
+body{
+    /*Estilo general de la página*/
+    background: white;
+ 
+}
+/*Cris*/
+.header {
+    grid-area: header;
+    background-color: black;
+    color: blanchedalmond;
+    height: 120px;
+}
+
+.header img {
+    width: 500px;
+    height: 95px;
+/*agregado para alinear menu*/
+    position: relative; 
+}
+
+/*agregado para alinear menu*/  
+.header header{
+    position: relative;
+    height: 25px;
+}
+
+.contenido {
+    margin-top: 50px;
+    grid-area: contenido;
+    background-color:white;
+    grid-row: 2 /span 4;
+}
+
+    /*Clase nueva*/
+.cabecera {
+    display: flex;
+    max-width: 1300px;
+    max-height: 500px;
+}
+
+    /*Clase nueva*/
+.cuerpo {
+    padding: 5em;
+}
+
+.cuerpo p {
+    font-family: 'Lato', sans-serif;
+    text-align: justify;
+    max-width: 500px;
+    max-height: 10px;
+    padding: 1em;
+}
+
+    /*Clase nueva*/
+.cuerpo h2 {
+    font-family: 'Catamaran', sans-serif;
+    font-size: 3em;
+    letter-spacing: 0em;
+    text-align: justify;
+    line-height : 50px;
+    max-width: 500 px;
+    max-height: 500px;
+}
+.imgR {
+    float: left;
+    margin-right:0px;
+    background-color: rgba(255, 255, 255,.6);
+    color: #000;
+    border:solid 7px rgba(255, 255, 255,.01);
+    border-bottom: solid 9.5px rgba(255, 255, 255,.01);
+    border-top: solid 9px rgba(255, 255, 255,.01);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  
+}
+
+.imgL {
+    float: right;
+    margin-right:0px;
+    background-color: rgba(255, 255, 255,.6);
+    color: #000;
+    border:solid 7px rgba(255, 255, 255,.01);
+    border-bottom: solid 9.5px rgba(255, 255, 255,.01);
+    border-top: solid 9px rgba(255, 255, 255,.01);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  
+}
+
+
+  .footer {
+    grid-area: footer;
+    font-family: 'Lato';
+    background-color: black;
+    height: 100%;
+    text-align: center;
+    color: ivory;
+}
+
+.footer li {
+    margin: 15px;
+}
+
+.menu_bar{
+ display: none;
+}
+
+header{
+    
+ width: 100%;
+ font-family: 'Catamaran', sans-serif;
+}
+
+header nav {
+ background: #FCBB00;
+ z-index: 1000;
+ width: 100%;
+ margin: 0px;
+}
+
+header nav ul {
+list-style: none; 
+}
+
+header nav ul li{
+ display: inline-block;
+ position: relative;
+}
+header nav ul li:hover {
+ background-color: black;
+
+}
+/**/
+header nav ul li:hover a{
+    color: #FCBB00;  
+}
+
+header nav ul li a{
+ color: black;
+ display: block;
+ text-decoration: none;
+ padding: 20px;
+}
+
+header nav ul li a span {
+ margin-right: 10px;
+}
+
+header nav ul li:hover .children {
+    display: block;
+    
+    
+   }
+   /**/
+   header nav ul li:hover .children a{
+   color: black;
+    
+   }
+
+   header nav ul li .children{
+    display: none;
+    background: #FCBB00;
+    position: absolute;
+    width: 150%;
+    z-index: 1000;
+   }
+   header nav ul li .children li {
+    display: block;
+    overflow: hidden;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+   }
+
+   header nav ul li:hover .children li a {
+    display: block;
+   }
+  /**/
+header nav ul li .children a:hover{
+    color: #FCBB00;  
+}
+   
+   
+
+   header nav ul li .caret 
+   {
+    position: relative;
+    top: 3px;
+    margin-left: 10px;
+    margin-right: 0px;
+
+   }
+/*probando para dejar login a la izq*/
+   /*.login{
+    position: relative;
+    left: 5%;
+   }*/
+
+
+
+/* Colocando íconos rrss al lado con funcion hover*/
+
+   nav .rrss {
+    
+    width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    background: black;
+    z-index: 1000;
+    width: 100%;
+    margin: 0px;
+
+    
+   }
+        
+   
+    nav .rrss li{
+    display: inline-block;
+    position: relative;
+   }
+   nav .rrss .rs:hover {
+    color: #FCBB00;
+   
+   }
+   
+
+
+
+
+   
+/*parte de celular*/
+   @media screen and (max-width: 1050px) {
+       body  {
+           padding-top: 80px;
+       }
+       .menu_bar {
+           display: block;
+           width: 100%;
+           position: fixed;
+           top: 0;
+        background: black;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: white;
+        overflow: hidden;
+        font-size: 25px;
+        font-weight: bold;
+        text-decoration: none;
+
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    header nav  {
+        width: 80%;
+        /* el 100% de la pantalla menos los 80 del comienzo para el final*/
+        height: calc(100%-80px);
+        position: fixed;
+        right: 100%;
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul li  {
+    display: block;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    }
+
+    header nav ul li a  {
+        display: block;
+    }
+
+    header nav ul li:hover .children {
+        display: none;
+    }
+
+    header nav ul li .children {
+        width: 100%;
+        position: relative;
+        
+    }
+
+    header nav ul li .children li a  {
+    margin-left: 20px;
+    }
+
+    header nav ul li .caret {
+        float: right;
+    }
+   }
