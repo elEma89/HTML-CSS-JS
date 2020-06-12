@@ -1,11 +1,11 @@
 const getRemainTime= deadline=>{
-    /*getRemainTime significa obtener el tiempo faltante*/
+    /*getRemainTime es para obtener el tiempo faltante*/
 
     let now= new Date(),
-    /*new Date() nos devuelve la fecha actual*/
+    /*new Date() esto nos devuelve la fecha actual*/
 
      remainTime=(new Date(deadline)-now+1000)/1000,
-     /*remaiTime=new Date(deadline)-now tiempo que falta para llegar está fecha limite 
+     /*remaiTime=new Date(deadline)-now tiempo que falta para llegar hasta la fecha limite, 
      nos devuelve en milisegundo y lo dividimos en 1000 para que pasé a segundos*/
 
      remainSeconds=('0'+Math.floor(remainTime % 60)).slice(-2),
