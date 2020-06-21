@@ -1,0 +1,82 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.calculadoraCont {
+    background-color: #dadada;
+    width: fit-content;
+    margin: auto;
+    margin-top: 35px;
+    width: 400px;
+}
+
+.sr {
+    padding: 0px 18px 18px 18px;
+}
+
+.sr button {
+    width: 54px;
+    height: 54px;
+    background-color: rgb(226, 152, 13);
+    color: #fff;
+    border: none;
+    font-size: px;
+    padding: 0px;
+}
+
+.teclas {
+    display: flex;
+}
+
+.pantalla {
+    padding: 18px 18px 0px 18px;
+}
+
+.numeros {
+    padding: 18px 9px 18px 18px;
+}
+
+.op {
+    padding: 18px 18px 18px 9px;
+}
+
+#resultado {
+    background-color: rgb(182, 182, 182);
+    color: #eee;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.op button {
+    display: block;
+    width: 54px;
+    height: 54px;
+    padding: 9px 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.numeros div {
+    text-align: center;
+}
+
+.numeros button {
+    border: 0px;
+    background-color: #fff;
+    transition: all 0.09s;
+}
+
+.numeros button:hover {
+    box-shadow: 0px 0px 12px #aaa;
+}
+
+button {
+    margin: 2px 0px;
+    padding: 15px 24px;
+    font-size: 19px;
+}
+
